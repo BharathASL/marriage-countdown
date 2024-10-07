@@ -30,9 +30,9 @@
     (function (w) {
       w.until = w.until || {};
       var urlParams = new URLSearchParams(window.location.search),
-        couple = document.title = urlParams.get('couple') || 'Default',
-        date = urlParams.get('date'),
-        background = urlParams.get('background'),
+        couple = document.title = urlParams.get('couple') || 'Honey & Bunny',
+        date = urlParams.get('date') || 0,
+        background = urlParams.get('background') || "https://r4.wallpaperflare.com/wallpaper/782/847/618/wedding-sunset-wallpaper-a6016761f5a5d2b9ac8129a86263501d.jpg",
         settings = {
           coupleName: couple,
           date: date,
